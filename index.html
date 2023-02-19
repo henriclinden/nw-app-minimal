@@ -13,6 +13,13 @@
     <div class="w3-display-middle">
         <p>Hello World</p>
     </div>
-</body>
+
+    <script>
+        const path = './';
+        const fs = require('fs');
+        fs.watch(path, () => {
+            if (location) location.reload();
+        });
+    </script>
 
 </html>
